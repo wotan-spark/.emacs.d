@@ -13,6 +13,9 @@
 ;;; Line Numbers
 (global-linum-mode t)
 
+;;; Transparent
+(set-frame-parameter nil 'alpha 80)
+
 ;;; Highlight Current Line
 (global-hl-line-mode t)
 
