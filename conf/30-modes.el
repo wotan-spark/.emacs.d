@@ -1,3 +1,7 @@
+;;; White Space
+(require 'whitespace)
+(global-whitespace-mode 1)
+
 ;;;; PHP Mode
 (when (require 'php-mode nil t)
   (add-to-list 'auto-mode-alist '("\\.ctp\\'" . php-mode))
