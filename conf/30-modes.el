@@ -2,6 +2,11 @@
 (require 'whitespace)
 (global-whitespace-mode 1)
 
+;;; Cua Mode
+(cua-mode t)
+(setq cua-enable-cua-keys nil)
+
+
 ;;;; PHP Mode
 (when (require 'php-mode nil t)
   (add-to-list 'auto-mode-alist '("\\.ctp\\'" . php-mode))
