@@ -1,3 +1,6 @@
+;;; Emacs Client
+(server-start)
+
 ;;; Startup Message
 (setq inhibit-startup-message t)
 
