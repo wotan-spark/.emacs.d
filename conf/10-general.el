@@ -2,7 +2,7 @@
 (setq frame-title-format "%f")
 
 ;;; Tool Bar
-(tool-bar-mode -1)
+(tool-bar-mode 0)
 
 ;;; Menu Bar
 (menu-bar-mode t)
@@ -19,3 +19,7 @@
 ;;; Show Paren Mode
 (setq show-paren-delay 0)
 (show-paren-mode t)
+
+;;; Mode Line
+(column-number-mode t)
+(size-indication-mode t)
