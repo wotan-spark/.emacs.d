@@ -13,3 +13,13 @@
 (auto-install-update-emacswiki-package-name t)
 (auto-install-compatibility-setup)
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
+
+;;; Coding
+(prefer-coding-system 'utf-8)
+
+(when (eq system-type 'windows-nt)
+  (setq default-file-name-coding-system 'shift_jis)
+  (set-file-name-coding-system 'cp932)
+  (set-keyboard-coding-system 'cp932)
+  (set-terminal-coding-system 'cp932)
+)
