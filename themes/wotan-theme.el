@@ -30,9 +30,14 @@
 (set-face-background 'mode-line-inactive "#736d71") ; red
 
 ;;; Highlight Current Line
-(set-face-background hl-line-face "#24140e") ; lamp black 
+(set-face-background hl-line-face "#24140e") ; lamp black
 
 ;;; Show Paren Mode
 (setq show-paren-style 'expression)
 (set-face-background 'show-paren-match-face nil)
 (set-face-underline-p 'show-paren-match-face "#dc143c") ; crimson
+
+;;; White Space
+(set-face-attribute 'whitespace-space nil :background nil :foreground "deepskyblue")
+(set-face-attribute 'whitespace-tab nil :background "gray20" :foreground "deepskyblue")
+(set-face-attribute 'whitespace-trailing nil :background "gray20" :foreground "deepskyblue")
