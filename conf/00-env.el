@@ -23,3 +23,11 @@
   (set-keyboard-coding-system 'cp932)
   (set-terminal-coding-system 'cp932)
 )
+
+;;; Backup Directory
+(add-to-list 'backup-directory-alist
+  (cons "." "~/.emacs.d/backup")
+)
+(setq auto-save-file-name-transforms
+  `((".*",(expand-file-name "~/.emacs.d/backup")) t)
+)
