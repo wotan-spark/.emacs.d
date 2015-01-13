@@ -31,14 +31,6 @@
   `((".*",(expand-file-name "~/.emacs.d/backup")) t)
 )
 
-;;; Unx Utils
-(when (eq window-system 'w32)
-  (setenv "PATH"
-    (format "%s;%s;%s"
-      "c:\\UnxUtils\\bin"
-      "c:\\UnxUtils\\usr\\local\\wbin"
-      (or (getenv "$PATH") "")
-    )
-  )
-  (setenv "SHELL"  "sh.exe")
-)
+;;; Ediff
+(setq ediff-window-setup-function 'ediff-setup-windows-plain)
+(setq ediff-split-window-function 'split-window-horizontally)
