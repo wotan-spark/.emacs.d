@@ -31,3 +31,15 @@
 (setq auto-save-file-name-transforms
   `((".*",(expand-file-name "~/.emacs.d/backup")) t)
 )
+
+;;; Unx Utils
+(when (eq window-system 'w32)
+  (setenv "PATH"
+    (format "%s;%s;%s"
+      "c:\\UnxUtils\\bin"
+      "c:\\UnxUtils\\usr\\local\\wbin"
+      (or (getenv "$PATH") "")
+    )
+  )
+  (setenv "SHELL"  "sh.exe")
+)
