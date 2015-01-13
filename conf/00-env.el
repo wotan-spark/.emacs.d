@@ -12,7 +12,6 @@
 (setq auto-install-directory "~/.emacs.d/elisp")
 (auto-install-update-emacswiki-package-name t)
 (auto-install-compatibility-setup)
-(setq ediff-window-setup-function 'ediff-setup-windows-plain)
 
 ;;; Coding
 (prefer-coding-system 'utf-8)
