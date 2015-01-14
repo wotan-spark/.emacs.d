@@ -23,6 +23,10 @@
   (set-terminal-coding-system 'cp932)
 )
 
+;;; Auto Complete Mode
+(require 'auto-complete-config)
+(global-auto-complete-mode 1)
+
 ;;; Backup Directory
 (add-to-list 'backup-directory-alist
   (cons "." "~/.emacs.d/backup")
