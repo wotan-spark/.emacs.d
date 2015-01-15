@@ -27,6 +27,13 @@
 (require 'auto-complete-config)
 (global-auto-complete-mode 1)
 
+;;; Color Moccur
+(require 'color-moccur)
+(setq moccur-split-word t)
+;;; Moccur Edit
+(require 'moccur-edit)
+(setq moccur-split-word t)
+
 ;;; Backup Directory
 (add-to-list 'backup-directory-alist
   (cons "." "~/.emacs.d/backup")

@@ -6,3 +6,4 @@ server/server
 .#*
 history
 places
+*.dat
