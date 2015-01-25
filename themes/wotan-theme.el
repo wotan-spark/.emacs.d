@@ -55,3 +55,10 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;;; Auto Complete Mode
+(set-face-background 'ac-completion-face "#191970")
+(set-face-background 'ac-candidate-face "#191970")
+(set-face-foreground 'ac-candidate-face "#00ffff")
+(set-face-background 'ac-selection-face "#00ffff")
+(set-face-foreground 'ac-selection-face "#191970")
