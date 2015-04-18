@@ -1,6 +1,6 @@
 ;;; White Space
 (require 'whitespace)
-(global-whitespace-mode 0)
+(global-whitespace-mode 1)
 
 ;;; Cua Mode
 (cua-mode t)
